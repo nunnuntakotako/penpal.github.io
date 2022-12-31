@@ -1,0 +1,37 @@
+<div class="container">
+  <h1 class="title">個人ページ</h1>
+</div>
+
+<div class="container">
+  <table border>
+    <tr>
+    <td>ID</td>
+    <td>名前</td>
+    <td>苗字</td>
+    <td>年</td>
+    <td>月</td>
+    <td>日</td>
+    </tr>
+
+    <tr>
+    <td><%= @s.id %></td>
+    <td><%= @s.first_name %></td>
+    <td><%= @s.last_name %></td>
+    <td><%= @s.birth_year %></td>
+    <td><%= @s.birth_month %></td>
+    <td><%= @s.birth_day %></td>
+    </tr>
+  </table>
+</div>
+
+<div class="container">
+  <form name="deleteform" method="post" action="/del">
+  <input type="submit" onclick="clickDisplayAlert()" value="Delete">
+  <input type="hidden" name="id" value="<%= @s.id %>">
+  <input type="hidden" name="_method" value="delete">
+  </form>
+</div>
+
+<footer>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</footer>

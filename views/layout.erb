@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>penpal</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function clickDisplayAlert() {
+               var result = window.confirm("削除して構いませんか？");
+               if(result){
+                   //削除実行処理
+                   alert('削除しました')
+               }else{
+                   //削除しない
+                   alert('トップに戻ります')
+               }
+            }
+        </script>
+    </head>
+    <body>
+        <%= yield %>
+        <div class="item"><a href="/register">登録画面へ</a></div>
+        <div class="item"><a href="/">トップページに戻る</a></div>
+    </body>
+</html>

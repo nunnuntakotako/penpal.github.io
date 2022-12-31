@@ -1,0 +1,9 @@
+create table memberdata(
+  id interger primary key,
+  first_name varchar(30),
+  last_name varchar(30),
+  birth_year int(4),
+  birth_month int(2),
+  birth_day int(2)
+);
+

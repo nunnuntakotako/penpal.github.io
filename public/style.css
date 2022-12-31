@@ -1,0 +1,27 @@
+.container{
+  display:flex;
+  justify-content:center;
+}
+
+.item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:20px;
+}
+
+.labeling{
+  margin:20px;
+}
+
+html{
+  background-color: #AB9A86;
+}
+
+.title{
+  color: midnightblue;
+}
+
+input.item{
+  display:flex;
+}
